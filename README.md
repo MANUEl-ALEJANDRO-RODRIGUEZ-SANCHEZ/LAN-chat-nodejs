@@ -1,27 +1,27 @@
 # 💬 Creative Chat App - LAN Chat
 
-## 📜 Descripción del Proyecto
+## 📜 Project Description
 
-**Creative Chat App** es una aplicación de chat en tiempo real construida con Node.js, Express y Socket.IO. Este proyecto permite a los usuarios comunicarse en un entorno local (LAN) a través de un navegador web, con funcionalidades como mensajes en tiempo real, notificaciones cuando alguien está escribiendo y estado "En línea". 
+**Creative Chat App** is a real-time chat application built with Node.js, Express, and Socket.IO. This project allows users to communicate in a local (LAN) environment through a web browser, with features such as real-time messaging, notifications when someone is typing, and "Online" status.
 
-El chat es intuitivo, interactivo y estéticamente agradable, con animaciones fluidas y un diseño visual moderno que mejora la experiencia del usuario. Además, incluye detección de si el usuario está activo en la pestaña del navegador, lo que permite notificar su estado en tiempo real a los demás usuarios del chat.
+The chat is intuitive, interactive, and aesthetically pleasing, with fluid animations and a modern visual design that enhances the user experience. Additionally, it includes detection of whether the user is active in the browser tab, allowing real-time notification of their status to other chat users.
 
-## 🚀 Funcionalidades
+## 🚀 Features
 
-- **Mensajes en tiempo real**: Los mensajes se envían y reciben al instante gracias a Socket.IO.
-- **Notificación de escritura**: Mientras alguien está escribiendo, los demás usuarios son notificados.
-- **Estado "En línea"**: Los usuarios pueden ver cuando otro usuario está activo en la pestaña del navegador.
-- **Animaciones dinámicas**: Cada mensaje nuevo se muestra con una animación fluida.
-- **Diseño responsivo**: Adaptado para verse correctamente en diferentes resoluciones de pantalla.
-- **Interfaz moderna**: Estilo visual con degradados, sombras y transparencias utilizando tecnologías CSS modernas como `backdrop-filter` y animaciones con `keyframes`.
-- **Scroll automático**: La ventana de chat se desplaza automáticamente hacia abajo para siempre mostrar el último mensaje.
+- **Real-time messaging**: Messages are sent and received instantly thanks to Socket.IO.
+- **Typing notification**: While someone is typing, other users are notified.
+- **Online Status**: Users can see when another user is active in the browser tab.
+- **Dynamic Animations**: Each new message is displayed with a fluid animation.
+- **Responsive Design**: Adapted to be displayed correctly on different screen resolutions.
+- **Modern Interface**: Visual style with gradients, shadows and transparencies using modern CSS technologies such as `backdrop-filter` and animations with `keyframes`.
+- **Auto Scroll**: The chat window automatically scrolls down to always show the latest message.
 
-## 🛠️ Tecnologías Utilizadas
+## 🛠️ Technologies Used
 
-- **Node.js**: Plataforma de desarrollo para crear el servidor.
-- **Express**: Framework de Node.js para gestionar rutas y peticiones HTTP.
-- **Socket.IO**: Biblioteca para la transmisión de mensajes en tiempo real entre clientes y servidor.
-- **HTML5 & CSS3**: Para la estructura y el diseño moderno de la interfaz.
-- **JavaScript (ES6+)**: Para la lógica del lado del cliente y la comunicación con el servidor.
+- **Node.js**: Development platform to create the server.
+- **Express**: Node.js framework to manage HTTP routes and requests.
+- **Socket.IO**: Library for real-time message transmission between clients and server.
+- **HTML5 & CSS3**: For the structure and modern design of the interface.
+- **JavaScript (ES6+)**: For client-side logic and communication with the server.
 
 ## Author: Manuel Rodriguez
