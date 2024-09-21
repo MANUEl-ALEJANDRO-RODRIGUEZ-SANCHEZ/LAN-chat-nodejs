@@ -8,9 +8,20 @@ const $message = $('#message'),
     $handle = $('#handle'),
     $btn = $('#send'),
     $output = $('#output'),
-    $feedback = $('#feedback');
+    $feedback = $('#feedback'),
+    $userStatus = $('#user-status');
 
 // Emit events
+document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible') {
+        socket.emit('userStatus', { handle: $handle.value, status: 'online' });
+    } else {
+        socket.emit('userStatus', { handle: $handle.value, status: 'offline' });
+    }
+});
+
+
+
 $btn.addEventListener('click', () => {
     const now = new Date();
     const hours = now.getHours();
@@ -61,6 +72,16 @@ socket.on('chat', (data) => {
 
 socket.on('typing', (data) => {
     $feedback.innerHTML = `<p><em>${data} is typing...</em></p>`;
+});
+
+socket.on('userStatus', (data) => {
+    $userStatus.innerHTML = ''; 
+    if(data.handle !== $handle.value) {
+        const statusMessage = document.createElement('p');
+        statusMessage.classList.add('user-status');
+        statusMessage.innerHTML = `<strong>${data.handle}</strong> is ${data.status}`;
+        $userStatus.appendChild(statusMessage);
+    }    
 });
 
 function scrollToBottom() {

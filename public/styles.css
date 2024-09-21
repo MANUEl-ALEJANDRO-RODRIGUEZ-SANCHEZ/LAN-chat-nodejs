@@ -59,6 +59,10 @@ header p{
     }
 }
 
+.user-status{
+    color: #fff;
+}
+
 #chat-window {
     height: 300px;
     overflow-y: auto;
